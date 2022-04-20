@@ -1,8 +1,8 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import styled from "styled-components";
 
 type Props = {
-  children: JSX.Element;
+  children: ReactNode;
 };
 
 const Container = ({ children }: Props) => {

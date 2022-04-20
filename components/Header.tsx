@@ -13,5 +13,5 @@ const Header = () => {
 export default Header;
 
 const StyledHeader = styled.header`
-  margin-top: 0.75rem;
+  margin-block: 0.75rem 2rem;
 `;

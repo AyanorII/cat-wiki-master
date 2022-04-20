@@ -12,8 +12,7 @@ const Footer = (props: Props) => {
       <Copyright>
         <StyledIcon />
         <div>
-          Created by
-          <span className="name"> Ayanori Toyoda</span> - devChallenge.io 2021
+          Created by <span className="name">Ayanori Toyoda</span> - devChallenge.io 2021
         </div>
       </Copyright>
     </StyledFooter>
