@@ -25,7 +25,7 @@ const StyledFooter = styled.footer`
   color: #fff;
   background-color: #000;
   border-radius: 15px 15px 0 0;
-  display: grid;
+  display: flex;
   gap: 1.3125rem;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +37,7 @@ const StyledFooter = styled.footer`
   }
 
   @media (min-width: 768px) {
-    flex-direction: row;
+    padding-inline: 3rem;
   }
 `;
 

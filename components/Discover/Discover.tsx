@@ -8,11 +8,9 @@ type Props = {};
 const Discover = () => {
   return (
     <StyledSection>
-      <>
-        <StyledSpan>Most Searched Breeds</StyledSpan>
-        <StyledHeading>66+ Breeds for you to Discover</StyledHeading>
-        <DiscoverCards />
-      </>
+      <StyledSpan>Most Searched Breeds</StyledSpan>
+      <StyledHeading>66+ Breeds for you to Discover</StyledHeading>
+      <DiscoverCards />
     </StyledSection>
   );
 };
@@ -27,6 +25,10 @@ const StyledSection = styled(Card)`
   display: grid;
   gap: 1rem;
   margin-bottom: 5.25rem;
+
+  @media (min-width: 768px) {
+    padding: 3rem 4rem 3.375rem;
+  }
 `;
 
 const StyledSpan = styled.span`
@@ -44,9 +46,25 @@ const StyledSpan = styled.span`
     top: 3px;
     border-radius: 3px;
   }
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    line-height: 20px;
+  }
 `;
 
 const StyledHeading = styled.h2`
   font-size: 1.125rem;
   line-height: 1.375rem;
+
+  @media (min-width: 768px) {
+    margin-top: 0.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    width: 33%
+  }
 `;

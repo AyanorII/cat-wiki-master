@@ -20,7 +20,7 @@ const StyledContainer = styled.div`
   }
 
   @media (min-width: 1440px) {
-    width: 86%;
+    width: 84%;
   }
 
   @media (min-width: 1920px) {
