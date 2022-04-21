@@ -59,6 +59,7 @@ const Breed = () => {
           <BreedGallery breed={breedInfo.id} className="breed-gallery" />
         </>
       ) : (
+
         <BallTriangles limit={6} />
       )}
     </StyledPage>
@@ -83,8 +84,30 @@ const StyledPage = styled.div`
     }
 
     .breed-stats,
-    .breed-gallery {
+    .breed-gallery,
+    .spinner {
       grid-column: 1 / -1;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    column-gap: 10%;
+
+    .breed-info, .breed-stats {
+      grid-column: 2 / -1;
+    }
+
+    .breed-info {
+      align-self: start;
+      grid-row: 1 / 2;
+    }
+
+    .breed-stats {
+      grid-row: 2 / 3;
+    }
+
+    .breed-image {
+      grid-row: 1 / 3
     }
   }
 `;

@@ -31,6 +31,11 @@ const StyledInput = styled.input`
   border: none;
   padding: 0.5rem 0.75rem;
   border-radius: 1rem;
+
+  @media (min-width: 768px) {
+    padding: 0.75rem 1.25rem;
+    border-radius: 1.25rem;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -47,4 +52,8 @@ const StyledIcon = styled(AiOutlineSearch)`
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+
+  @media (min-width: 768px) {
+    right: 16px;
+  }
 `;

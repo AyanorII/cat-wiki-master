@@ -61,6 +61,10 @@ const StyledList = styled.ul`
     margin-top: 2rem;
     grid-column: 1 / 3;
   }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 3rem;
+  }
 `;
 
 const StyledItem = styled.li`

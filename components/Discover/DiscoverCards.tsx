@@ -97,6 +97,10 @@ const StyledGrid = styled.div`
     object-fit: cover;
     width: 100%;
   }
+
+  @media (min-width: 768px) {
+    gap: 1.5rem;
+  }
 `;
 
 const StyledParagraph = styled.p`
@@ -104,4 +108,10 @@ const StyledParagraph = styled.p`
   font-weight: 600;
   line-height: 14px;
   margin-top: 0.5rem;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    line-height: 18px;
+    margin-top: 0.75rem;
+  }
 `;

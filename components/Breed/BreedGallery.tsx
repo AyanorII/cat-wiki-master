@@ -61,6 +61,10 @@ const Wrapper = styled.div`
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 9.375rem;
+
+  @media (min-width: 768px) {
+    gap: 2rem;
+  }
 `;
 
 const StyledHeading = styled.h2`
@@ -79,4 +83,8 @@ const StyledGallery = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 `;

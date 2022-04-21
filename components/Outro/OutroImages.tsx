@@ -42,4 +42,8 @@ const Wrapper = styled.div`
   img {
     object-fit: contain;
   }
+
+  @media (min-width: 768px) {
+    width: 100%
+  }
 `;
